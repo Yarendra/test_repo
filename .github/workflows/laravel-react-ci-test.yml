@@ -52,7 +52,10 @@ jobs:
 
       - name: Run migrations
         run: php artisan migrate --force
-
+        
+      - name: Run Laravel Pint
+        run: vendor/bin/pint --test
+        
       - name: Run PHPUnit tests
         run: php artisan test
 
