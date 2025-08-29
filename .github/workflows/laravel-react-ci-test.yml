@@ -11,6 +11,9 @@ on:
 jobs:
   laravel-tests:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./test_laravel
 
     services:
       mysql:
@@ -55,6 +58,9 @@ jobs:
 
   react-tests:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./test_react
     steps:
       - uses: actions/checkout@v3
 
