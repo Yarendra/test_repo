@@ -13,6 +13,12 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', function () {
+     $data = ['name' => 'John', 'age' => 30];
+    // if ($data['age'] > 18) {
+    //     $data['status'] = 'adult';
+    // } else {
+    //     $data['status'] = 'minor';
+    // }
     return 'Hello, World! third test hell ';
 });
 
